@@ -1,0 +1,13 @@
+<?php
+define("CORE_PATH",dirname(__FILE__).DIRECTORY_SEPARATOR."core".DIRECTORY_SEPARATOR); 
+
+define("APP_PATH",dirname(__FILE__).DIRECTORY_SEPARATOR."app".DIRECTORY_SEPARATOR);
+define("APP_CTR_PATH",APP_PATH."controller".DIRECTORY_SEPARATOR);
+define("APP_MOD_PATH",APP_PATH."model".DIRECTORY_SEPARATOR);
+define("APP_VIEW_PATH",APP_PATH."view".DIRECTORY_SEPARATOR);
+define("APP_CNF_PATH",APP_PATH."config".DIRECTORY_SEPARATOR);
+define("SUFFIX",".php");
+
+require(CORE_PATH."init.php");
+
+$a = new CtrA();
