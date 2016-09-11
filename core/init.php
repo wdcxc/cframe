@@ -24,3 +24,10 @@ function autoloader($className){
 
 spl_autoload_register("autoloader");
 
+$ctr = empty($_GET["ctr"]) ? "index" : $_GET["ctr"];
+$act = empty($_GET["act"]) ? "index" : $_GET["act"];
+$router = CorRouter::getInstance();
+$router->setController($ctr);
+$router->setAction($act);
+$router->route();
+

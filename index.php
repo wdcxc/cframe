@@ -10,4 +10,3 @@ define("SUFFIX",".php");
 
 require(CORE_PATH."init.php");
 
-$a = new CtrA();
